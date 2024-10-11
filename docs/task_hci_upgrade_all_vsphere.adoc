@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: docs/task_hci_upgrade_all_vsphere.html 
+summary: 您可以升級VMware元件NetApp HCI 以利執行VMware、並採取其他步驟重新安裝vCenter外掛程式。 
+keywords: netapp, hci, vSphere components, upgrade, vCenter, ESXi 
+---
+= 利用NetApp HCI vCenter Server的Element外掛程式、為支援VMware的系統升級vSphere元件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您升級NetApp HCI 安裝的VMware vSphere元件時、您需要採取一些額外步驟來安裝vCenter Server的Element Plug-in。
+
+.步驟
+. 對於 vCSA 升級、 https://docs.netapp.com/us-en/vcp/vcp_task_qossioc.html#clear-qossioc-settings["清楚明瞭"^]插件中的 QoSSIOC 設定（ * NetApp Element 組態 > QoSSIOC 設定 * ）。程序完成後、會顯示「 *QoSSIOC 狀態 * 」欄位 `Not Configured`。
+. 對於 vCSA 和 Windows 升級、 https://docs.netapp.com/us-en/vcp/task_vcp_unregister.html["取消登錄"^]使用登錄公用程式與 vCenter Server 相關聯的外掛程式。
+. https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.upgrade.doc/GUID-7AFB6672-0B0B-4902-B254-EE6AE81993B2.html["升級vSphere、包括vCenter Server、ESXi、VM及其他VMware元件"^]。
++
+
+IMPORTANT: 升級至VMware vCenter Server 7.0 U3時、Element外掛程式無法部署。要使用 Spring Framework 4 解決此問題，請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/vCenter_plug-in_deployment_fails_after_upgrading_vCenter_to_version_7.0_U3["這篇知識庫文章"^]。
+
++
+
+NOTE: 為的運算節點升級 ESXi https://www.netapp.com/pdf.html?item=/media/9489-tr-4823.pdf["雙節點叢集"^] 時、一次只能升級一個運算節點、因此只有一個見證節點暫時無法使用、而且可以維持叢集仲裁。
+
+. https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html#register-the-plug-in-with-vcenter["註冊"^]使用 vCenter 再次使用 Element Plug-in for vCenter Server 。
+. https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html#add-storage-clusters-for-use-with-the-plug-in["新增叢集"^]使用外掛程式。
+. https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["設定QoSSIOC設定"^]使用外掛程式。
+. https://docs.netapp.com/us-en/vcp/vcp_task_qossioc.html#enabling-qossioc-automation-on-datastores["啟用QoSSIOC"^]適用於由外掛程式控制的所有資料存放區。
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
+* https://www.netapp.com/pdf.html?item=/media/9489-tr-4823.pdf["《雙節點儲存叢集技術報告》NetApp HCI"^]
+

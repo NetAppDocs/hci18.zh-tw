@@ -1,0 +1,128 @@
+---
+sidebar: sidebar 
+permalink: docs/rn_whatsnew.html 
+summary: 瞭NetApp HCI 解此版本的更新內容。 
+keywords: netapp, hci, element, new, whatsnew 
+---
+= 更新功能NetApp HCI
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp會定期更新NetApp HCI 功能、為您帶來新功能、增強功能和錯誤修復。NetApp HCI 1.8P1 包含儲存叢集的元素 12.2 。
+
+* <<NetApp HCI 產品系列1.8P1>>本節說明 NetApp HCI 1.8P1 版的新功能與更新。
+* <<元件12.2>>本節說明 NetApp Element 12.2 的新功能與更新。
+
+
+
+
+== NetApp HCI 產品系列1.8P1
+
+NetApp HCI 1.8P1 改善了安全性與穩定性。
+
+
+
+=== NetApp HCI 文件增強功能
+
+您現在可以使用易於瀏覽的格式來訪問 NetApp HCI 升級、擴展、監控和概念信息link:index.html["請按這裡"^]。
+
+
+
+=== vCenter Server 4.5可用度的插件NetApp Element
+
+NetApp Element Plug-in for vCenter Server 4.5 可在管理節點 12.2 和 NetApp HCI 1.8P1 版本之外取得。若要升級外掛程式、請遵循文件中的指示link:concept_hci_upgrade_overview.html["升級NetApp HCI"]進行。
+
+
+
+=== NetApp混合雲控制增強功能
+
+NetApp 混合雲控制功能已針對版本 1.8P1 進行強化。 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["深入瞭解"^]。
+
+
+
+== 元件12.2
+
+NetApp HCI 1.8P1 包含儲存叢集的元素 12.2 。Element 12.2 引進 SolidFire 企業級 SDS 、靜態軟體加密、維護模式、增強的 Volume 存取安全性、完整網域名稱（ FQDN ）存取 UI 、儲存節點韌體更新及安全性更新。
+
+
+
+=== SolidFire 企業 SDS
+
+元素 12.2 引進 SolidFire 企業 SDS （ ESDS ）。SolidFire ESDS 可在符合 SolidFire ESDS 參考組態的硬體上、提供 SolidFire 橫向擴充技術和 NetApp Element 軟體資料服務的優點。 http://docs.netapp.com/sfe-122/index.jsp?topic=%2Fcom.netapp.doc.sfe-sds-ig%2FGUID-F1BDD19F-AF33-4CDE-B67F-C5E17D4E6DE9.html["深入瞭解"^]。
+
+以下是與 SolidFire ESDS 相關的新元素 API 方法(http://docs.netapp.com/sfe-122/index.jsp?topic=%2Fcom.netapp.doc.sfe-sds-ug%2FGUID-4D335B61-6B68-4B81-AD6E-BCA1E7ABACD5.html["SolidFire ESDS 的元素 12.2 API 資訊"^]、提供更多資訊）：
+
+* `GetLicenseKey`
+* `SetLicenseKey`
+
+
+
+
+=== 靜態軟體加密
+
+Element 12.2 引進靜態的軟體加密、可在建立儲存叢集時啟用（建立 SolidFire 企業 SDS 儲存叢集時、預設會啟用）。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。
+
+以下是與靜態軟體加密相關的元素 API 方法（ http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/home.html["Element API 參考指南"^]具有更多資訊）：
+
+* `CreateCluster`
+
+
+
+
+=== 維護模式
+
+元素 12.2 採用維護模式、可讓您將儲存節點離線進行維護、例如軟體升級或主機修復、同時防止所有資料完全同步。如果有一或多個節點需要維護、您可以在開始之前啟用這些節點的維護模式、將 I/O 對儲存叢集其餘部分的影響降至最低。您可以在兩個應用裝置節點以及 SolidFire ESDS 節點上使用維護模式。
+
+
+
+=== 增強的 Volume 存取安全性
+
+您現在可以根據 VLAN （虛擬網路）關聯、限制特定啟動器的磁碟區存取。您可以將新的或現有的啟動器與一或多個虛擬網路建立關聯、將該啟動器限制為可透過這些虛擬網路存取的 iSCSI 目標。
+
+以下是與這些安全性改善相關的更新元素 API 方法（ http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/home.html["Element API 參考指南"^]有更多資訊）：
+
+* `CreateInitiators`
+* `ModifyInitiators`
+* `AddAccount`
+* `ModifyAccount`
+
+
+
+
+=== 完整網域名稱（ FQDN ）存取 UI
+
+元素 12.2 支援使用 FQDN 的叢集 Web 介面存取。在元素 12.2 儲存叢集上、如果您使用 FQDN 來存取 Web 使用者介面、例如元素 Web UI 、每節點 UI 或管理節點 UI 、則必須先新增儲存叢集設定、以識別叢集所使用的 FQDN 。此設定可讓叢集正確重新導向登入工作階段、並協助與金鑰管理程式和身分識別提供者等外部服務進行更好的整合、以進行多因素驗證。此功能需要 2.15 版或更新版本的管理服務。link:task_nde_access_ui_fqdn.html["深入瞭解"]。
+
+
+
+=== 儲存節點韌體更新
+
+Element 12.2包含儲存節點的韌體更新。link:rn_relatedrn.html["深入瞭解"]。
+
+
+
+=== 安全性增強功能
+
+Element 12.2 解決儲存節點和管理節點的安全性弱點。 http://security.netapp.com/["深入瞭解"^]關於這些安全性增強功能。
+
+
+
+=== 磁碟機故障的新 SMART 警告
+
+Element 12.2 現在會使用磁碟機中的智慧健康資料、對 SolidFire 應用裝置磁碟機執行定期健全狀況檢查。未通過SMART健全狀況檢查的磁碟機可能會接近故障。如果磁碟機未通過 SMART 健全狀況檢查、則會出現新的嚴重程度叢集故障： `Drive with serial: <serial number> in slot: <node slot><drive slot> has failed the SMART overall health check. To resolve this fault, replace the drive`
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["NetApp混合雲控制與管理服務版本說明"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/us/documentation/hci.aspx["「資源」頁面NetApp HCI"^]
+* http://docs.netapp.com/sfe-122/index.jsp["元件與元件軟體文件中心SolidFire"^]
+* link:firmware_driver_versions.html["支援的韌體和ESXi驅動程式版本NetApp HCI 、適用於支援NetApp HCI 的VMware及韌體版本、適用於各種儲存節點"]
+

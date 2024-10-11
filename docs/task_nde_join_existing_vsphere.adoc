@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: docs/task_nde_join_existing_vsphere.html 
+summary: 瞭解如何在NetApp HCI 部署過程中設定VMware vSphere。 
+keywords: netapp, hci, netapp deployment engine, deployment, vsphere 
+---
+= 加入現有的VMware vSphere部署
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過提供 vCenter Server 網路資訊和認證、將 NetApp HCI 設定為充分利用現有的 vSphere 部署。
+
+.您需要的產品
+* 如果您要加入現有的vSphere 6.7部署、請確定vCenter Server執行的是6.7 Update 1版。
+* 如果您要加入現有的vSphere 6.5部署、請確定vCenter Server執行的是6.5 Update 2或更新版本。
+* 取得現有vSphere部署的網路詳細資料和管理員認證資料。
+
+
+.關於這項工作
+如果您加入使用vCenter連結模式連線的多個vCenter Server系統、NetApp HCI 則僅能辨識其中一個vCenter Server系統。
+
+
+NOTE: 使用 NetApp Element Plug-in for vCenter Server 從其他 vCenter Server 使用來管理叢集資源、僅限於本機儲存叢link:https://docs.netapp.com/us-en/vcp/vcp_concept_linkedmode.html["vCenter連結模式"^]集。
+
+.步驟
+. 選取 * 加入並延伸現有的 vSphere 部署 * 。
+. 在「* vCenter Server網域名稱或IP位址*」欄位中輸入網域名稱或IP位址。如果您輸入網域名稱、也需要在出現的「* DNS伺服器IP位址*」欄位中輸入作用中DNS伺服器的IP位址。
+. 在*使用者名稱和密碼*欄位中輸入vSphere管理員的認證資料。
+. 選擇*繼續*。
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* link:firmware_driver_versions.html["支援的韌體和ESXi驅動程式版本NetApp HCI 、適用於支援NetApp HCI 的VMware及韌體版本、適用於各種儲存節點"]
+

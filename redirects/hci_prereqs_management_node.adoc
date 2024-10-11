@@ -1,0 +1,8 @@
+---
+permalink: docs/hci_prereqs_management_node.html 
+redirect: hci18/docs/hci_prereqs_overview.html 
+---
+= 
+:allow-uri-read: 
+
+

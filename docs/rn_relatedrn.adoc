@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: docs/rn_relatedrn.html 
+summary: 取得NetApp HCI 鏈接、取得有關產品或元件的版本資訊、這些產品或元件都是屬於整個環境的一部分。 
+keywords: netapp, hci, element, vcp, vcenter plugin, storage, management services, compute firmware 
+---
+= 其他版本資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以找到NetApp HCI 最新及早期版本說明的連結、以瞭解有關各種元件的資訊、包括各種元件儲存環境。
+
+
+NOTE: 系統會提示您使用 NetApp 支援網站認證資料登入。
+
+
+
+== NetApp HCI
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2873790["NetApp HCI 1.8P1 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2865021["發行說明NetApp HCI"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2861226["NetApp HCI 1.7P1 版本資訊"^]
+
+
+
+
+== 軟件NetApp Element
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2873789["NetApp Element 軟體 12.2 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2865022["NetApp Element 軟體 12.0 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2864256["NetApp Element 軟體 11.8 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2861225["NetApp Element 軟體 11.7 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2863854["《軟件11.5.1版發行說明》NetApp Element"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2859857["《軟件11.3P1發行說明》NetApp Element"^]
+
+
+
+
+== 管理服務
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服務版本說明"^]
+
+
+
+
+== vCenter Server的VMware vCenter外掛程式NetApp Element
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2885734["vCenter Plug-in 5.1 版本資訊"^]_new_
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2884992["vCenter Plug-in 5.0 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2884458["vCenter Plug-in 4.10 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881904["vCenter Plug-in 4.9 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879296["vCenter Plug-in 4.8 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876748["vCenter Plug-in 4.7 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874631["vCenter Plug-in 4.6 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2873396["vCenter Plug-in 4.5 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2866569["vCenter Plug-in 4.4 版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2856119["vCenter Plug-in 4.3 版本資訊"^]
+
+
+
+
+== 運算韌體
+
+* link:rn_compute_firmware_2.146.html["運算韌體套裝組合2.146版本說明"]
+* link:rn_compute_firmware_2.27.html["運算韌體套裝組合2.27版本說明"]
+* link:rn_firmware_12.2.109.html["運算韌體套件 12.2.109 版本資訊"]
+* link:firmware_driver_versions.html["支援的韌體和ESXi驅動程式版本"]_new_
+
+
+
+
+== 儲存韌體
+
+* link:rn_storage_firmware_2.146.html["儲存韌體產品組合2.146版本說明"]
+* link:rn_storage_firmware_2.99.2.html["儲存裝置韌體套件 2.99.2 版本資訊"]
+* link:rn_storage_firmware_2.76.html["儲存韌體產品組合2.76版本說明"]
+* link:rn_storage_firmware_2.27.html["儲存韌體產品組合2.27版本說明"]
+* link:rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07版本說明"]
+* link:firmware_driver_versions.html["支援的韌體和ESXi驅動程式版本"]_new_
+

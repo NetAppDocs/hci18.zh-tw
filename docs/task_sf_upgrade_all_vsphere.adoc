@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: docs/task_sf_upgrade_all_vsphere.html 
+summary: 您可以升級SolidFire VMware元件以供搭配使用的VMware儲存系統、並採取其他步驟重新安裝vCenter外掛程式。 
+keywords: netapp, solidfire, vsphere components, upgrade, vCenter, ESXi 
+---
+= 使用SolidFire vCenter Server的Element外掛程式、升級NetApp支援的vSphere元件、以利NetApp支援儲存系統
+:allow-uri-read: 
+
+
+[role="lead"]
+升級SolidFire VMware vSphere元件以進行VMware vCenter Server元件儲存安裝時、您還需要採取一些其他步驟、以利搭配Element Plug-in for vCenter Server的系統。
+
+.步驟
+. 對於 vCSA 升級、 https://docs.netapp.com/us-en/vcp/vcp_task_qossioc.html#clear-qossioc-settings["清楚明瞭"^]插件中的 QoSSIOC 設定（ * NetApp Element 組態 > QoSSIOC 設定 * ）。程序完成後、會顯示「 *QoSSIOC 狀態 * 」欄位 `Not Configured`。
+. 對於 vCSA 和 Windows 升級、 https://docs.netapp.com/us-en/vcp/task_vcp_unregister.html["取消登錄"^]使用登錄公用程式與 vCenter Server 相關聯的外掛程式。
+. https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.upgrade.doc/GUID-7AFB6672-0B0B-4902-B254-EE6AE81993B2.html["升級vSphere、包括vCenter Server、ESXi、VM及其他VMware元件"^]。
+. https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html#register-the-plug-in-with-vcenter["註冊"^]使用 vCenter 再次使用 Element Plug-in for vCenter Server 。
+. https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html#add-storage-clusters-for-use-with-the-plug-in["新增叢集"^]使用外掛程式。
+. https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["設定QoSSIOC設定"^]使用外掛程式。
+. https://docs.netapp.com/us-en/vcp/vcp_task_qossioc.html#enabling-qossioc-automation-on-datastores["啟用QoSSIOC"^]適用於由外掛程式控制的所有資料存放區。
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
+

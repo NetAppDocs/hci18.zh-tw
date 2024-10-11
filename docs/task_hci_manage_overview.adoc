@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: docs/task_hci_manage_overview.html 
+summary: 您可以管理 NetApp HCI 、使用者帳戶、儲存叢集、磁碟區、磁碟區存取群組、啟動器、磁碟區 QoS 原則和管理節點的認證。 
+keywords: netapp, hci, install, deploy, get started 
+---
+= 介紹管理概述NetApp HCI
+:allow-uri-read: 
+
+
+[role="lead"]
+您可以管理 NetApp HCI 、使用者帳戶、儲存叢集、磁碟區、磁碟區存取群組、啟動器、磁碟區 QoS 原則和管理節點的認證。
+
+以下是您可以使用的項目：
+
+* link:task_hci_credentials_vcenter_esxi.html["更新vCenter和ESXi認證資料"]
+* link:task_hcc_manage_storage_overview.html["管理NetApp HCI 不一致的儲存資產"]
+* link:task_mnode_work_overview.html["使用管理節點"]
+* link:concept_nde_hci_power_off_on.html["關閉NetApp HCI 或開啟您的系統電源"]
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["「資源」頁面NetApp HCI"^]
+

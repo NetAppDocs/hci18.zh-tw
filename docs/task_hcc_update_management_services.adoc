@@ -1,0 +1,160 @@
+---
+sidebar: sidebar 
+permalink: docs/task_hcc_update_management_services.html 
+summary: 在進行升級時、您應該更新管理服務。NetApp HCI 
+keywords: netapp, hci, on premise, cluster, management services 
+---
+= 更新管理服務
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝管理節點11.3或更新版本之後、您可以將管理服務更新為最新的套裝組合版本。
+
+從Element 11.3管理節點版本開始、管理節點設計已根據提供個別服務的新模組化架構而改變。這些模組化服務為 NetApp HCI 和 SolidFire All Flash 儲存系統提供集中且延伸的管理功能。管理服務包括系統遙測、記錄和更新服務、適用於vCenter Server的Element Plug-in的QoSSIOC服務、NetApp混合雲控制等。
+
+.關於這項工作
+* 您必須先升級至最新的管理服務套裝組合、才能升級Element軟體。
+
+
+
+NOTE: 如需說明主要服務、新功能、錯誤修正及每個服務套件因應措施的最新管理服務版本資訊，請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服務版本說明"^]。
+
+.您需要的產品
+從管理服務2.20.69開始、您必須先接受並儲存終端使用者授權合約（EULA）、才能使用NetApp混合雲控制UI或API來升級管理服務：
+
+. 在Web瀏覽器中開啟管理節點的IP位址：
++
+[listing]
+----
+https://<ManagementNodeIP>
+----
+. 提供儲存叢集管理員認證資料、以登入NetApp混合雲控制系統。
+. 選取介面右上角附近的*升級*。
+. 隨即顯示EULA。向下捲動、選取*我接受目前及所有未來更新*、然後選取*儲存*。
+
+
+.更新選項
+您可以使用NetApp混合雲控制UI或管理節點REST API來更新管理服務：
+
+* <<使用混合雲控制更新管理服務>>（建議方法）
+* <<使用管理節點API更新管理服務>>
+
+
+
+
+== 使用混合雲控制更新管理服務
+
+您可以使用NetApp混合式雲端控制來更新NetApp管理服務。
+
+管理服務套裝組合可在主要版本之外提供增強的功能與修正程式。
+
+.您需要的產品
+* 您執行的是管理節點11.3或更新版本。
+* 如果您要將管理服務更新至2.16版或更新版本、而且執行的是管理節點11.3至11.8、則在更新管理服務之前、必須先增加管理節點VM的RAM：
++
+.. 關閉管理節點VM。
+.. 將管理節點VM的RAM從12GB變更為24GB RAM。
+.. 開啟管理節點VM的電源。
+
+
+* 您的叢集版本執行的是 NetApp Element 軟體 11.3 或更新版本。
+* 您已將管理服務升級至至少2.1.326版。NetApp混合雲控制升級不適用於舊版服務組合。
+
+
+
+NOTE: 如需每個服務套件版本的可用服務清單，請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服務版本說明"^]。
+
+.步驟
+. 在Web瀏覽器中開啟管理節點的IP位址：
++
+[listing]
+----
+https://<ManagementNodeIP>
+----
+. 提供儲存叢集管理員認證資料、以登入NetApp混合雲控制系統。
+. 選取介面右上角附近的*升級*。
+. 在「升級」頁面上、選取「*管理服務*」索引標籤。
++
+「管理服務」索引標籤會顯示管理服務軟體的目前和可用版本。
+
++
+
+NOTE: 如果您的安裝無法存取網際網路、則只會顯示目前的軟體版本。
+
+. 如果您的安裝可以存取網際網路、而且有可用的管理服務升級、請選取*開始升級*。
+. 如果您的安裝無法存取網際網路、請執行下列動作：
++
+.. 請依照頁面上的指示、下載管理服務升級套件並將其儲存至您的電腦。
+.. 選取*瀏覽*以找出您儲存的套件並上傳。
++
+上傳套件後、系統會自動開始升級。
+
++
+升級開始後、您可以在此頁面上看到升級狀態。在升級期間、您可能會失去與NetApp混合雲控制的連線、而必須重新登入才能查看升級結果。
+
+
+
+
+
+
+
+== 使用管理節點API更新管理服務
+
+使用者最好能從NetApp混合雲控制系統執行管理服務更新。不過、您可以使用REST API、將管理服務的服務套件更新手動上傳、擷取及部署至管理節點。您可以從管理節點的REST API UI執行每個命令。
+
+.您需要的產品
+* 您已部署NetApp Element 了一個版本為11.3或更新版本的軟件管理節點。
+* 如果您要將管理服務更新至2.16版或更新版本、而且執行的是管理節點11.3至11.8、則在更新管理服務之前、必須先增加管理節點VM的RAM：
++
+.. 關閉管理節點VM。
+.. 將管理節點VM的RAM從12GB變更為24GB RAM。
+.. 開啟管理節點VM的電源。
+
+
+* 您的叢集版本執行的是 NetApp Element 軟體 11.3 或更新版本。
+* 您已將管理服務升級至至少2.1.326版。NetApp混合雲控制升級不適用於舊版服務組合。
++
+
+NOTE: 如需每個服務套件版本的可用服務清單，請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服務版本說明"^]。
+
+
+
+.步驟
+. 在管理節點上開啟 REST API UI ： `https://<ManagementNodeIP>/mnode`
+. 選擇*授權*並完成下列項目：
++
+.. 輸入叢集使用者名稱和密碼。
+.. 輸入用戶端 ID 、就像尚未填入值一樣 `mnode-client`。
+.. 選取*授權*以開始工作階段。
+.. 關閉視窗。
+
+
+. 使用以下命令上傳並擷取管理節點上的服務套件： `PUT /services/upload`
+. 在管理節點上部署管理服務： `PUT /services/deploy`
+. 監控更新狀態： `GET /services/update/status`
++
+成功的更新會傳回類似下列範例的結果：
+
++
+[listing]
+----
+{
+"current_version": "2.10.29",
+"details": "Updated to version 2.17.52",
+"status": "success"
+}
+----
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
+

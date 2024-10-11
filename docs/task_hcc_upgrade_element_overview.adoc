@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: docs/task_hcc_upgrade_element_overview.html 
+summary: 在升級版的過程中、您需要升級一套功能完善的功能。NetApp HCI NetApp Element 
+keywords: netapp, hci, on premise, cluster, element 
+---
+= 將儲存叢集上的 Element 軟體升級至 12.2 版
+:allow-uri-read: 
+
+
+[role="lead"]
+在 NetApp HCI 或 SolidFire 儲存系統升級的過程中、您需要升級 NetApp Element 軟體。
+
+您必須使用 HealthTools 工具套件來升級儲存節點軟體。
+
+.您需要的產品
+* 您執行的是管理節點11.0、11.1或更新版本。
+* 您已將管理服務升級至至少2.1.326版。
++
+NetApp混合雲控制升級不適用於舊版服務套裝組合。
+
+
+
+.步驟
+. 確定儲存叢集上的元素版本。
+. 使用 HealthTools 執行升級前檢查。
+. 升級 Element 軟體版本。
+. 在黑暗的網站上升級您的 Element 軟體版本。
+
+
+
+TIP: 若要檢視儲存設備和運算資源的數量、請參閱NetApp混合雲控制（HCC）儀表板。請參閱。 link:task_hcc_dashboard.html["在 HCC 儀表板中檢視儲存和運算資源"]
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
+

@@ -1,0 +1,8 @@
+---
+permalink: docs/concept_hcc_custom_protection_domains.html 
+redirect: hci18/docs/concept_hci_storage_maintenance_mode.html 
+---
+= 
+:allow-uri-read: 
+
+

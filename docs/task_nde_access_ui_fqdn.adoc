@@ -1,0 +1,224 @@
+---
+sidebar: sidebar 
+permalink: docs/task_nde_access_ui_fqdn.html 
+summary: 瞭解如何設定您的系統、以進行 Web UI 的 FQDN 存取。 
+keywords: netapp, hci, fqdn, ui, access, web, administration 
+---
+= 設定完整網域名稱Web UI存取
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp HCI with Element 12.2 或更新版本可讓您使用完整網域名稱（ FQDN ）存取儲存叢集 Web 介面。若要使用FQDN存取Web使用者介面、例如元素Web UI、每節點UI或管理節點UI、您必須先新增儲存叢集設定、以識別叢集所使用的FQDN。這可讓叢集正確重新導向登入工作階段、並改善與外部服務（例如金鑰管理程式和身分識別供應商）的整合、以進行多因素驗證。
+
+.您需要的產品
+* 此功能需要元件12.2或更新版本。
+* 若要使用NetApp混合雲控制REST API設定此功能、需要使用2.15或更新版本的管理服務。
+* 若要使用NetApp混合雲控制UI設定此功能、需要使用2.19或更新版本的管理服務。
+* 若要使用REST API、您必須部署執行版本11.5或更新版本的管理節點。
+* 您需要管理節點和每個儲存叢集的完整網域名稱、以便正確解析為管理節點IP位址和每個儲存叢集IP位址。
+
+
+您可以使用NetApp混合雲控制和REST API來設定或移除FQDN Web UI存取。您也可以疑難排解設定不正確的FQDN。
+
+* <<使用NetApp混合雲控制設定FQDN Web UI存取>>
+* <<使用REST API設定FQDN Web UI存取>>
+* <<使用NetApp混合雲控制移除FQDN Web UI存取>>
+* <<使用REST API移除FQDN Web UI存取>>
+* <<疑難排解>>
+
+
+
+
+== 使用NetApp混合雲控制設定FQDN Web UI存取
+
+.步驟
+. 在Web瀏覽器中開啟管理節點的IP位址：
++
+[listing]
+----
+https://<ManagementNodeIP>
+----
+. 提供儲存叢集管理員認證資料、以登入NetApp混合雲控制系統。
+. 選取頁面右上角的功能表圖示。
+. 選擇*設定*。
+. 在*完整網域名稱*窗格中、選取*設定*。
+. 在產生的視窗中、輸入管理節點和每個儲存叢集的FQDN。
+. 選擇*保存*。
++
+「*完整網域名稱*」窗格會列出每個儲存叢集與其相關聯的MVIP和FQDN。
+
++
+
+NOTE: 「*完整網域名稱*」窗格中只會列出具有FQDN集的連線儲存叢集。
+
+
+
+
+
+== 使用REST API設定FQDN Web UI存取
+
+.步驟
+. 確保元素儲存節點和管理節點已針對網路環境正確設定DNS、以便解析環境中的FQDN。若要設定DNS、請前往儲存節點的每節點UI和管理節點、然後選取*網路設定*>*管理網路*。
++
+.. 儲存節點的每節點 UI ： `https://<storage_node_management_IP>:442`
+.. 管理節點的每節點 UI ： `https://<ManagementNodeIP>:442`
+
+
+. 使用Element API變更儲存叢集設定。
++
+.. 存取 Element API 、並使用 API 方法建立下列叢集介面偏好設定 `CreateClusterInterfacePreference`、然後將叢集 MVIP FQDN 插入偏好設定值：
++
+*** 名稱： `mvip_fqdn`
+*** 值：<叢集MVIP>的完整網域名稱
++
+例如，此處的 FQDN 是 `storagecluster.my.org`：
+
++
+[listing]
+----
+https://<Cluster_MVIP>/json-rpc/12.2?method=CreateClusterInterfacePreference&name=mvip_fqdn&value=storagecluster.my.org
+----
+
+
+
+
+. 使用管理節點上的REST API變更管理節點設定：
++
+.. 輸入管理節點 IP 位址、然後輸入、即可存取管理節點的 REST API UI `/mnode/2/` 。例如：
++
+[listing]
+----
+https://<ManagementNodeIP>/mnode/2/
+----
+.. 選取*授權*或任何鎖定圖示、然後輸入元素叢集使用者名稱和密碼。
+.. 輸入用戶端 ID 為 `mnode-client`。
+.. 選取*授權*以開始工作階段。
+.. 關閉視窗。
+.. 選擇* Get /settings *。
+.. 選擇*試用*。
+.. 選擇*執行*。
+.. 請注意，代理是否如 `true`或 `false`所示使用 `"use_proxy"`。
+.. 選擇*放置/設定*。
+.. 選擇*試用*。
+.. 在要求主體區域中、輸入管理節點 FQDN 做為參數的值 `mnode_fqdn`。同時指定是否應使用 Proxy 或 `false`從上一個步驟開始 `use_proxy`使用 Proxy (`true`。
++
+[listing]
+----
+{
+  "mnode_fqdn": "mnode.my.org",
+  "use_proxy": false
+}
+----
+.. 選擇*執行*。
+
+
+
+
+
+
+== 使用NetApp混合雲控制移除FQDN Web UI存取
+
+您可以使用此程序來移除管理節點和儲存叢集的FQDN Web存取。
+
+.步驟
+. 在*完整網域名稱*窗格中、選取*編輯*。
+. 在產生的視窗中、刪除「* FQDN *」文字欄位中的內容。
+. 選擇*保存*。
++
+視窗隨即關閉、FQDN不再列在*完整網域名稱*窗格中。
+
+
+
+
+
+== 使用REST API移除FQDN Web UI存取
+
+.步驟
+. 使用Element API變更儲存叢集設定。
++
+.. 存取 Element API 、並使用 API 方法刪除下列叢集介面偏好選項 `DeleteClusterInterfacePreference`：
++
+*** 名稱： `mvip_fqdn`
++
+例如：
+
++
+[listing]
+----
+https://<Cluster_MVIP>/json-rpc/12.2?method=DeleteClusterInterfacePreference&name=mvip_fqdn
+----
+
+
+
+
+. 使用管理節點上的REST API變更管理節點設定：
++
+.. 輸入管理節點 IP 位址、然後輸入、即可存取管理節點的 REST API UI `/mnode/2/` 。例如：
++
+[listing]
+----
+https://<ManagementNodeIP>/mnode/2/
+----
+.. 選取*授權*或任何鎖定圖示、然後輸入元素叢集使用者名稱和密碼。
+.. 輸入用戶端 ID 為 `mnode-client`。
+.. 選取*授權*以開始工作階段。
+.. 關閉視窗。
+.. 選擇*放置/設定*。
+.. 選擇*試用*。
+.. 請勿在要求主體區域中輸入參數值 `mnode_fqdn`。還要指定是否應使用該參數的代理(`true`或 `false`） `use_proxy`。
++
+[listing]
+----
+{
+  "mnode_fqdn": "",
+  "use_proxy": false
+}
+----
+.. 選擇*執行*。
+
+
+
+
+
+
+== 疑難排解
+
+如果FQDN設定不正確、您可能會在存取管理節點、儲存叢集或兩者時發生問題。請使用下列資訊來協助疑難排解問題。
+
+|===
+| 問題 | 原因 | 解決方案 
+
+
+ a| 
+* 嘗試使用FQDN存取管理節點或儲存叢集時、會出現瀏覽器錯誤。
+* 您無法使用IP位址登入管理節點或儲存叢集。
+
+| 管理節點FQDN和儲存叢集FQDN均設定不正確。 | 使用此頁面上的REST API指示、移除管理節點和儲存叢集FQDN設定、然後重新設定。 
+
+
+ a| 
+* 嘗試存取儲存叢集FQDN時、您會收到瀏覽器錯誤。
+* 您無法使用IP位址登入管理節點或儲存叢集。
+
+| 管理節點FQDN設定正確、但儲存叢集FQDN設定不正確。 | 使用此頁面上的REST API指示、移除儲存叢集FQDN設定、然後重新設定。 
+
+
+ a| 
+* 嘗試存取管理節點FQDN時、您會收到瀏覽器錯誤。
+* 您可以使用IP位址登入管理節點和儲存叢集。
+
+| 管理節點FQDN設定不正確、但儲存叢集FQDN設定正確。 | 登入NetApp混合雲控制、以修正UI中的管理節點FQDN設定、或使用此頁面上的REST API指示來修正設定。 
+|===
+[discrete]
+== 如需詳細資訊、請參閱
+
+* http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/GUID-93942724-1C4C-4F3D-B352-89498F7722ED.html["SolidFire and Element 文件中心中的 CreateClusterInterfacePreference API 資訊"^]
+* https://www.netapp.com/us/documentation/hci.aspx["「資源」頁面NetApp HCI"^]
+* http://docs.netapp.com/sfe-122/index.jsp["元件與元件軟體文件中心SolidFire"^]
+
