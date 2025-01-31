@@ -364,4 +364,4 @@ sidebar:
     - title: 更換雙節點叢集中的儲存節點
       url: "/docs/task_hci_2noderepl.html"
   - title: 法律聲明
-    url: "/docs/reference_notices_hci.html"
+    url: "/legal-notices.html"
