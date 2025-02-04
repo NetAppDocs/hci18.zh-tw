@@ -1437,47 +1437,26 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="7ca92aa55af86adcb8e4f02055e5d1f3" category="inline-link-macro">運算韌體產品組合2.146注意事項</block>
-  <block id="070e6ce33f7ff2e60a2783c8ebb93cce" category="list-text"><block ref="070e6ce33f7ff2e60a2783c8ebb93cce" category="inline-link-macro-rx"></block></block>
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">儲存韌體產品組合2.146注意事項</block>
-  <block id="976f425b451919895bc3cde2d81dd6c3" category="list-text"><block ref="976f425b451919895bc3cde2d81dd6c3" category="inline-link-macro-rx"></block></block>
   <block id="2e5993f9d970daebf225967bb1e45acc" category="inline-link-macro">儲存韌體套件 2.99.2 注意事項</block>
-  <block id="9b66050651411f30ce4e4e60cd49154f" category="list-text"><block ref="9b66050651411f30ce4e4e60cd49154f" category="inline-link-macro-rx"></block></block>
   <block id="4b07ee081088aae3fb4d0eecd6d5e33c" category="inline-link-macro">運算韌體產品組合2.76注意事項</block>
-  <block id="620e2d12cdf5e08b9753be70962af1c2" category="list-text"><block ref="620e2d12cdf5e08b9753be70962af1c2" category="inline-link-macro-rx"></block></block>
   <block id="927feedbfb9bbc4a93e285ba9504ab0b" category="inline-link-macro">儲存韌體產品組合2.76注意事項</block>
-  <block id="8ef06865130f39fba4f2f1bd57b10db9" category="list-text"><block ref="8ef06865130f39fba4f2f1bd57b10db9" category="inline-link-macro-rx"></block></block>
   <block id="15eb0cb82eab0a91d0477b28cedc9e6d" category="inline-link-macro">運算韌體產品組合2.27注意事項</block>
-  <block id="fc252c43c5ce275603b4d02a0185de6e" category="list-text"><block ref="fc252c43c5ce275603b4d02a0185de6e" category="inline-link-macro-rx"></block></block>
   <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">儲存韌體產品組合2.27注意事項</block>
-  <block id="628635daa878466322430a063a3be8a2" category="list-text"><block ref="628635daa878466322430a063a3be8a2" category="inline-link-macro-rx"></block></block>
   <block id="4ecde2684e69acd5d2c24072d2d87431" category="inline-link-macro">運算韌體ISO注意事項</block>
-  <block id="d20a53f0f6934177e690e38a85903142" category="list-text"><block ref="d20a53f0f6934177e690e38a85903142" category="inline-link-macro-rx"></block></block>
   <block id="a04e943dbcdb750d041999712b0c3468" category="inline-link-macro">H610S BMC注意事項</block>
-  <block id="c0897cc71834939a3e05ac01145a60a3" category="list-text"><block ref="c0897cc71834939a3e05ac01145a60a3" category="inline-link-macro-rx"></block></block>
   <block id="bddb591f0b60efba3de48f954b55f287" category="inline-link-macro">管理服務 2.23.64 注意事項（適用於 VMware vCenter Server 5.1.12 的 NetApp Element 外掛程式）</block>
-  <block id="adb27ccd96e9d86f5b808b75377f9b5d" category="list-text"><block ref="adb27ccd96e9d86f5b808b75377f9b5d" category="inline-link-macro-rx"></block></block>
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">管理服務 2.22.7 注意事項（適用於 VMware vCenter Server 5.0.37 的 NetApp Element 外掛程式）</block>
-  <block id="7b34a7cbcce764e8d1ad156461cf35c3" category="list-text"><block ref="7b34a7cbcce764e8d1ad156461cf35c3" category="inline-link-macro-rx"></block></block>
   <block id="6802ee2e6d325852973924be55003180" category="inline-link-macro">管理服務2.21.61注意事項（NetApp Element 適用於vCenter Server 4.10.12的VMware外掛程式）</block>
-  <block id="ca9239bf570791b1b05bcb88781e4290" category="list-text"><block ref="ca9239bf570791b1b05bcb88781e4290" category="inline-link-macro-rx"></block></block>
   <block id="91973e8fa965f2bdba61e9b8919b4ee5" category="inline-link-macro">管理服務2.20.69注意事項（NetApp Element 適用於vCenter Server 4.9.14的VMware外掛程式）</block>
-  <block id="55e4360e9b62728478e508dd54c47f2e" category="list-text"><block ref="55e4360e9b62728478e508dd54c47f2e" category="inline-link-macro-rx"></block></block>
   <block id="c6df14aa71e88712620087ef3c0051b8" category="inline-link-macro">管理服務2.19.48注意事項（NetApp Element 適用於vCenter Server 4.8.34的VMware外掛程式）</block>
-  <block id="174ce06c1d59e2ad02ac5198dd145e3c" category="list-text"><block ref="174ce06c1d59e2ad02ac5198dd145e3c" category="inline-link-macro-rx"></block></block>
   <block id="e9ddfae2256b1bb9c9a0f68ff44e48e4" category="inline-link-macro">管理服務2.18.91注意事項（NetApp Element 適用於vCenter Server 4.7.10的VMware外掛程式）</block>
-  <block id="e0bed2ffce925ae5c0c54e5d588908ef" category="list-text"><block ref="e0bed2ffce925ae5c0c54e5d588908ef" category="inline-link-macro-rx"></block></block>
   <block id="30d92c8789efab57b790dee431c18297" category="inline-link-macro">管理服務2.17.56注意事項（NetApp Element 適用於vCenter Server 4.6.32的VMware外掛程式）</block>
-  <block id="7443ea641fee3000f4de005d4eb4bd33" category="list-text"><block ref="7443ea641fee3000f4de005d4eb4bd33" category="inline-link-macro-rx"></block></block>
   <block id="82201a9fe720b4d4499b9faea48e3fc0" category="inline-link-macro">管理服務2.17注意事項NetApp Element （適用於vCenter Server 4.6.29的VMware外掛程式）</block>
-  <block id="6fd905a093f9d34b9e1715acd6c41654" category="list-text"><block ref="6fd905a093f9d34b9e1715acd6c41654" category="inline-link-macro-rx"></block></block>
   <block id="770994475f57b3ce3e40618e8d3e1705" category="inline-link-macro">管理服務2.16注意事項NetApp Element （適用於vCenter Server 4.6.29的VMware外掛程式）</block>
-  <block id="07b9c90552a4651d5faf56bc6eca9135" category="list-text"><block ref="07b9c90552a4651d5faf56bc6eca9135" category="inline-link-macro-rx"></block></block>
   <block id="1cb251dcf63c7c6b0f0f032152675c8b" category="inline-link-macro">管理服務2.14注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）</block>
-  <block id="900584851315b10b766296f6df002e93" category="list-text"><block ref="900584851315b10b766296f6df002e93" category="inline-link-macro-rx"></block></block>
   <block id="a945e669932fbbe48d4794d770411d05" category="inline-link-macro">管理服務2.13注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）</block>
-  <block id="d22ae1e66e46d1cfb632ed3078f04704" category="list-text"><block ref="d22ae1e66e46d1cfb632ed3078f04704" category="inline-link-macro-rx"></block></block>
   <block id="d9f3c0c9eb340c8261bfa8b95bd04b9a" category="inline-link-macro">管理服務2.11注意事項NetApp Element （適用於vCenter Server 4.4.72的VMware外掛程式）</block>
-  <block id="2a457438beda60d5fb52e68ed7488fc0" category="list-text"><block ref="2a457438beda60d5fb52e68ed7488fc0" category="inline-link-macro-rx"></block></block>
   <block id="6878153064f983e50fe1538332b04875" category="inline-link">NetApp HCI 1.8 注意事項</block>
   <block id="1b5e451286af92db851650172906487b" category="list-text"><block ref="1b5e451286af92db851650172906487b" category="inline-link-rx"></block></block>
   <block id="92f931e19caf8af4e3a31a82b06ccabd" category="summary">取得可下載並套用NetApp HCI 至各個節點之韌體套件版本資訊的連結。</block>
@@ -6268,4 +6247,25 @@
   <block id="9a273d2d550df11ef961cf667f623547" category="sidebar">擴充NetApp儲存與運算資源</block>
   <block id="b7f7f58ec15cebe706964cdc95d8f5cf" category="sidebar">使用Rancher on NetApp HCI 支援</block>
   <block id="efaccef33aabd635656b681f92a298ea" category="sidebar">維護H系列硬體</block>
+  <block id="e0a2b3604cb7980931b047c5b79b7334" category="list-text"><block ref="e0a2b3604cb7980931b047c5b79b7334" category="inline-link-macro-rx"></block></block>
+  <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
+  <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
+  <block id="f77a37db2275406d3d7de2688fdf5293" category="list-text"><block ref="f77a37db2275406d3d7de2688fdf5293" category="inline-link-macro-rx"></block></block>
+  <block id="69b7535618573fd609dc8b4663c8b8c0" category="list-text"><block ref="69b7535618573fd609dc8b4663c8b8c0" category="inline-link-macro-rx"></block></block>
+  <block id="f1a0148c13871b8d939879c1fe67614a" category="list-text"><block ref="f1a0148c13871b8d939879c1fe67614a" category="inline-link-macro-rx"></block></block>
+  <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
+  <block id="aa5c9a89f196e514e1fafba2ea4fe274" category="list-text"><block ref="aa5c9a89f196e514e1fafba2ea4fe274" category="inline-link-macro-rx"></block></block>
+  <block id="782279fa2517c048d3f08897e94b8e22" category="list-text"><block ref="782279fa2517c048d3f08897e94b8e22" category="inline-link-macro-rx"></block></block>
+  <block id="2926dc5780f42141aca045c0001024a5" category="list-text"><block ref="2926dc5780f42141aca045c0001024a5" category="inline-link-macro-rx"></block></block>
+  <block id="08051f25eb15067f82271c19a19ded03" category="list-text"><block ref="08051f25eb15067f82271c19a19ded03" category="inline-link-macro-rx"></block></block>
+  <block id="19436b0bc37e63a280dc38b80395a21d" category="list-text"><block ref="19436b0bc37e63a280dc38b80395a21d" category="inline-link-macro-rx"></block></block>
+  <block id="f0fe2934aa8d8cec985fef2e0c464532" category="list-text"><block ref="f0fe2934aa8d8cec985fef2e0c464532" category="inline-link-macro-rx"></block></block>
+  <block id="aa2056e9afdc89e9967f15533d45acdf" category="list-text"><block ref="aa2056e9afdc89e9967f15533d45acdf" category="inline-link-macro-rx"></block></block>
+  <block id="265198a9c3c8fb4a3507e9c1ef330707" category="list-text"><block ref="265198a9c3c8fb4a3507e9c1ef330707" category="inline-link-macro-rx"></block></block>
+  <block id="6541435f6b4c4f1470854e108732a5ea" category="list-text"><block ref="6541435f6b4c4f1470854e108732a5ea" category="inline-link-macro-rx"></block></block>
+  <block id="feef143f7d8a186b944d853e31505074" category="list-text"><block ref="feef143f7d8a186b944d853e31505074" category="inline-link-macro-rx"></block></block>
+  <block id="842266b8873383455019c1a1caa31921" category="list-text"><block ref="842266b8873383455019c1a1caa31921" category="inline-link-macro-rx"></block></block>
+  <block id="09445f34cd5729442e7b2de72fb58d64" category="list-text"><block ref="09445f34cd5729442e7b2de72fb58d64" category="inline-link-macro-rx"></block></block>
+  <block id="36da361c4ac55f014f982e3621e4b133" category="list-text"><block ref="36da361c4ac55f014f982e3621e4b133" category="inline-link-macro-rx"></block></block>
+  <block id="5e447c4788a02133d94738f6ce42f213" category="list-text"><block ref="5e447c4788a02133d94738f6ce42f213" category="inline-link-macro-rx"></block></block>
 </blocks>

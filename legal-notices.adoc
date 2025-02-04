@@ -11,7 +11,7 @@ translate: false
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -51,26 +51,26 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
 
-* link:../media/compute_firmware_bundle_2.146_notices.pdf["運算韌體產品組合2.146注意事項"^]
-* link:../media/storage_firmware_bundle_2.146_notices.pdf["儲存韌體產品組合2.146注意事項"^]
-* link:../media/storage_firmware_bundle_2.99_notices.pdf["儲存韌體套件 2.99.2 注意事項"^]
-* link:../media/compute_firmware_bundle_2.76_notices.pdf["運算韌體產品組合2.76注意事項"^]
-* link:../media/storage_firmware_bundle_2.76_notices.pdf["儲存韌體產品組合2.76注意事項"^]
-* link:../media/compute_firmware_bundle_2.27_notices.pdf["運算韌體產品組合2.27注意事項"^]
-* link:../media/storage_firmware_bundle_2.27_notices.pdf["儲存韌體產品組合2.27注意事項"^]
-* link:../media/compute_iso_notice.pdf["運算韌體ISO注意事項"^]
-* link:../media/H610S_BMC_notice.pdf["H610S BMC注意事項"^]
-* link:../media/mgmt_svcs_2.23_notice.pdf["管理服務 2.23.64 注意事項（適用於 VMware vCenter Server 5.1.12 的 NetApp Element 外掛程式）"^]
-* link:../media/mgmt_svcs_2.22_notice.pdf["管理服務 2.22.7 注意事項（適用於 VMware vCenter Server 5.0.37 的 NetApp Element 外掛程式）"^]
-* link:../media/mgmt_svcs_2.21_notice.pdf["管理服務2.21.61注意事項（NetApp Element 適用於vCenter Server 4.10.12的VMware外掛程式）"^]
-* link:../media/2.20_notice.pdf["管理服務2.20.69注意事項（NetApp Element 適用於vCenter Server 4.9.14的VMware外掛程式）"^]
-* link:../media/2.19.48_notice.pdf["管理服務2.19.48注意事項（NetApp Element 適用於vCenter Server 4.8.34的VMware外掛程式）"^]
-* link:../media/2.18.91_notice.pdf["管理服務2.18.91注意事項（NetApp Element 適用於vCenter Server 4.7.10的VMware外掛程式）"^]
-* link:../media/2.17.56-notice.pdf["管理服務2.17.56注意事項（NetApp Element 適用於vCenter Server 4.6.32的VMware外掛程式）"^]
-* link:../media/2.17_notice.pdf["管理服務2.17注意事項NetApp Element （適用於vCenter Server 4.6.29的VMware外掛程式）"^]
-* link:../media/2.16_notice.pdf["管理服務2.16注意事項NetApp Element （適用於vCenter Server 4.6.29的VMware外掛程式）"^]
-* link:../media/mgmt_svcs_2.14_notice.pdf["管理服務2.14注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）"^]
-* link:../media/2.13_notice.pdf["管理服務2.13注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）"^]
-* link:../media/mgmt_svcs2.11_notice.pdf["管理服務2.11注意事項NetApp Element （適用於vCenter Server 4.4.72的VMware外掛程式）"^]
+* link:./media/compute_firmware_bundle_2.146_notices.pdf["運算韌體產品組合2.146注意事項"^]
+* link:./media/storage_firmware_bundle_2.146_notices.pdf["儲存韌體產品組合2.146注意事項"^]
+* link:./media/storage_firmware_bundle_2.99_notices.pdf["儲存韌體套件 2.99.2 注意事項"^]
+* link:./media/compute_firmware_bundle_2.76_notices.pdf["運算韌體產品組合2.76注意事項"^]
+* link:./media/storage_firmware_bundle_2.76_notices.pdf["儲存韌體產品組合2.76注意事項"^]
+* link:./media/compute_firmware_bundle_2.27_notices.pdf["運算韌體產品組合2.27注意事項"^]
+* link:./media/storage_firmware_bundle_2.27_notices.pdf["儲存韌體產品組合2.27注意事項"^]
+* link:./media/compute_iso_notice.pdf["運算韌體ISO注意事項"^]
+* link:./media/H610S_BMC_notice.pdf["H610S BMC注意事項"^]
+* link:./media/mgmt_svcs_2.23_notice.pdf["管理服務 2.23.64 注意事項（適用於 VMware vCenter Server 5.1.12 的 NetApp Element 外掛程式）"^]
+* link:./media/mgmt_svcs_2.22_notice.pdf["管理服務 2.22.7 注意事項（適用於 VMware vCenter Server 5.0.37 的 NetApp Element 外掛程式）"^]
+* link:./media/mgmt_svcs_2.21_notice.pdf["管理服務2.21.61注意事項（NetApp Element 適用於vCenter Server 4.10.12的VMware外掛程式）"^]
+* link:./media/2.20_notice.pdf["管理服務2.20.69注意事項（NetApp Element 適用於vCenter Server 4.9.14的VMware外掛程式）"^]
+* link:./media/2.19.48_notice.pdf["管理服務2.19.48注意事項（NetApp Element 適用於vCenter Server 4.8.34的VMware外掛程式）"^]
+* link:./media/2.18.91_notice.pdf["管理服務2.18.91注意事項（NetApp Element 適用於vCenter Server 4.7.10的VMware外掛程式）"^]
+* link:./media/2.17.56-notice.pdf["管理服務2.17.56注意事項（NetApp Element 適用於vCenter Server 4.6.32的VMware外掛程式）"^]
+* link:./media/2.17_notice.pdf["管理服務2.17注意事項NetApp Element （適用於vCenter Server 4.6.29的VMware外掛程式）"^]
+* link:./media/2.16_notice.pdf["管理服務2.16注意事項NetApp Element （適用於vCenter Server 4.6.29的VMware外掛程式）"^]
+* link:./media/mgmt_svcs_2.14_notice.pdf["管理服務2.14注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）"^]
+* link:./media/2.13_notice.pdf["管理服務2.13注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）"^]
+* link:./media/mgmt_svcs2.11_notice.pdf["管理服務2.11注意事項NetApp Element （適用於vCenter Server 4.4.72的VMware外掛程式）"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2870307["NetApp HCI 1.8 注意事項"^]
 
