@@ -19,6 +19,5 @@ NetApp Element 軟體支援保護網域功能、可最佳化儲存節點上的�
 [discrete]
 == 如需詳細資訊、請參閱
 
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["「資源」頁面NetApp HCI"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

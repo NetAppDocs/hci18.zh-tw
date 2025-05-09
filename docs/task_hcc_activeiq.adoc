@@ -59,5 +59,4 @@ TIP: 若要檢視儲存設備和運算資源的數量、請查看混合雲控制
 
 * https://docs.netapp.com/us-en/solidfire-active-iq/index.html["NetApp SolidFire Active IQ 產品文件"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
 

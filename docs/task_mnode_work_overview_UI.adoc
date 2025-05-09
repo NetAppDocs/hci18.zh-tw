@@ -23,5 +23,4 @@ keywords: 'netapp, management node ui, mnode ui, :442, element'
 
 * link:task_mnode_access_ui.html["存取管理節點"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
 

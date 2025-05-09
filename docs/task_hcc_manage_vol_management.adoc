@@ -305,5 +305,4 @@ IMPORTANT: 與管理服務相關的持續磁碟區會在安裝或升級期間建
 * link:concept_hci_volumes.html["深入瞭解Volume"]
 * http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-2D2EAC0D-DD28-4ACA-A189-AA45E982EFDB.html["使用Volume"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
 

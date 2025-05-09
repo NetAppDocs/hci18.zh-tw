@@ -155,6 +155,5 @@ image::bol_list_bugs_found.png[儲存韌體套裝軟體版本注意事項]
 == 如需詳細資訊、請參閱
 
 * https://docs.netapp.com/hci/index.jsp["NetApp HCI 產品資料中心"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_to_update_iDRAC%2F%2FBIOS_firmware_on_SF_Series_nodes["KB：如何更新SF系列節點上的IDC/BIOS韌體"^]
 

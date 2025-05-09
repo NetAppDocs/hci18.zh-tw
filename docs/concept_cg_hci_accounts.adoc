@@ -86,7 +86,6 @@ Volume帳戶是在NetApp混合雲控制磁碟區表格中管理。
 
 * link:task_hcc_manage_accounts.html["管理使用者帳戶"]
 * link:concept_hci_clusters.html["深入瞭解叢集"]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["「資源」頁面NetApp HCI"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 * https://docs.netapp.com/sfe-122/index.jsp["SolidFire and Element 文件中心"^]
 

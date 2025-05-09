@@ -176,6 +176,5 @@ Volume快照是Volume的時間點複本、您可以稍後用來將磁碟區還�
 [discrete]
 == 如需詳細資訊、請參閱
 
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["「資源」頁面NetApp HCI"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

@@ -706,5 +706,4 @@ NOTE: 如果叢集也有非H610S節點、則這些非H610S節點可免除階段2
 == 如需詳細資訊、請參閱
 
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
 

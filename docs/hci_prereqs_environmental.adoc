@@ -24,6 +24,5 @@ NOTE: H410C運算節點只能以高線電壓（200-240 VAC）運作。將H410C�
 [discrete]
 == 如需詳細資訊、請參閱
 
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["「資源」頁面NetApp HCI"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 
